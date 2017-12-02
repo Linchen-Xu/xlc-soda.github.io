@@ -45,6 +45,22 @@
         }
     </style>
     <script type="text/javascript">
+        window.onload = function(){
+            var num = parseInt(Math.random()*4+1);
+            document.body.style.backgroundImage='url(./image/p_0'+num+'.jpg)';
+            var oTop = document.getElementById("to_top");
+            var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+            var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+            oTop.style.left = screenw - oTop.offsetWidth +"px";
+            oTop.style.top = screenh - oTop.offsetHeight + "px";
+            window.onscroll = function(){
+                var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+                oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+            };
+            oTop.onclick = function(){
+                document.documentElement.scrollTop = document.body.scrollTop =0;
+            };
+        };
         window.onscroll = function(){
             var t = document.documentElement.scrollTop || document.body.scrollTop;
             var top_div = document.getElementById( "top_div" );
@@ -56,21 +72,27 @@
         }
     </script>
     <link rel="stylesheet" type="text/css" href="css/20171201.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 </head>
 
-    <a name="top">顶部<a>
-        <div id="top_div"><a href="#top">还没做好的返回顶部</a></div>
+    <a name="top">
+        <a>
+            <div id="top_div">
+                <a href="#top">还没做好的返回顶部</a>
+            </div>
+        </a>
+    </a>
 
 
-    <body id="particles-js" onload="var num = parseInt(Math.random()*4+1);document.body.style.backgroundImage='url(./image/p_0'+num+'.jpg)';aa();" style="background-size: 100%;background-attachment: fixed;">
+<body id="particles-js" style="background-size: 100%;background-attachment: fixed;">
 
 <!-- fixed menu -->
 
-    <div id="topNavWrapper">
-        <ul  id="topNav">
-            还没做好的顶部菜单
-        </ul>
-    </div>
+    <!--<div id="topNavWrapper">-->
+        <!--<ul  id="topNav">-->
+            <!--还没做好的顶部菜单-->
+        <!--</ul>-->
+    <!--</div>-->
     <div style="margin:0 auto;text-align:center" id="aaa">
     </div>
 
@@ -80,32 +102,20 @@
 <div class="maxtopbar">
     <div class="nav-head">
         <div id="top-nav" class="nav-container">
-            <a class="nav-logo" href="/"><img src="/static/image/max_logo3.png"></a>
+            <a class="nav-logo" href="/"><img src="/image/max_logo3.png"></a>
             <a href="/"><li class="h-active">首页</li></a>
             <div class="nav-item-box">
-                <a href="/hero/rate/">
-                    <li>数据</li></a>
+                <a href="/articles/">
+                    <li>文章</li></a>
                 <ul class="nav-item-list" style="display: none;">
-                    <a href="/hero/rate/">
-                        <li>英雄</li></a>
-                    <a href="/item/">
-                        <li>物品</li></a>
+                    <a href="/articles/1/">
+                        <li>1</li></a>
+                    <a href="/articles/2/">
+                        <li>2</li></a>
                 </ul>
             </div>
-            <a href="/match/tour_famous_team_list/"><li>职业</li></a>
-            <a href="/player/"><li>玩家</li></a>
-            <a href="/ladder/"><li>天梯</li></a>
-            <a href="/live/"><li>直播</li></a>
-            <a href="/app" id="appdownload">
-                <li>APP</li>
-            </a>
-            <div class="nav-right">
-                <div class="account-wrap">
-                    <div class="not-login-wrap">
-                        <a href="/login/" class="btn login">登录</a>
-                    </div>
-                </div>
-            </div>
+            <a href="/sources"><li>资源</li></a>
+            <a href="/intro"><li>个人介绍</li></a>
         </div>
     </div>
 </div>
@@ -251,7 +261,14 @@
 
 <!--end of particles-->
 
+<!-- footbar -->
+    <div style="width:100%;min-width:1100px;text-align: center; display: table;position: absolute;">
+        <div style="background-color: rgb(10,10,10);border-top:1px rgb(15,15,15) solid;cursor: pointer;margin-top: -1px;height:23px;" href="#top">
+            <span class="fa fa-chevron-up" style="font-size: 16px;line-height: 25px;"></span>
+        </div>
+    </div>
 
+<!-- end of footbar -->
 
 </body>
 </html>
