@@ -7,7 +7,7 @@ body {
     margin: 0;
     font: 12px/1.5 Arial, 'Droid Sans', 'Hiragino Sans GB', 'Microsoft YaHei';
     /*text-shadow: rgb(17, 17, 17) 1px 1px 0px;*/
-    
+    cursor:url(/image/cursor_normal.png),auto;
     line-height: 20px;
     color: #ddd;
 }
@@ -22,7 +22,11 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover,
+a:hover{
+    outline: 0;
+    text-decoration: none;
+    cursor:url(/image/cursor_jump.png),auto;
+}
 a:focus {
     color: rgb(255, 255, 255);
 }
