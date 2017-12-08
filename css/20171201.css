@@ -7,11 +7,37 @@ div,main,article{
     display: block;
 }
 
+.padding-content{
+    padding:40px;
+}
 
-span,p,ul,ol,li,img{
+header.entry-header{
+    margin-bottom:16px;
+}
 
+.entry-meta{
+    color:#9e9e9e;
+    font-size: 12px;
+}
+
+.list-inline{
+    padding-left:0;
+    margin-left:-5px;
+    list-style: none;
+}
+
+.entry-content{
+    text-align: left;
+}
+
+span,p,ul,ol,img{
 	padding: 0;
 	margin: 0;
+}
+
+li{
+    display:list-item;
+    text-align: -webkit-match-parent;
 }
 
 body {
