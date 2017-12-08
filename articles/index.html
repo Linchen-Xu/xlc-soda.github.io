@@ -283,18 +283,18 @@
                                 </div>
 
                                 <div class="entry-content">
-                                    <h3>E – String of CCPC</h3>
+                                    <p>E – String of CCPC:</p>
                                     <p>最多只用插入一次字符，找到可以插入字符的情况就行了。可以插入字符的情况也就三种：</p>
                                     <p>1.CCC，且后面两个C不会和之后的字符串构成CCPC;</p>
                                     <p>2.CPC；</p>
                                     <p>3.CCP。</p>
                                     <p>最后计算CCPC的数量即可。</p>
-                                    <h3>G – Numbers</h3>
+                                    <p>G – Numbers:</p>
                                     <p>建议用java的BigInteger，可以偷点懒。</p>
                                     <p>很明显的贪心，策略是从最高位开始，如果这一位必须取1（也就是说，对第i位来讲，2的i次方减1乘上m比当前的n要小，那么肯定要有一部分数的第i位取1），就在n上去掉尽可能多的2的i次方，直到n变成零。</p>
-                                    <h3>L – One-Dimensional Maze</h3>
+                                    <p>L – One-Dimensional Maze:</p>
                                     <p>输出（第2到第m个字符中’R’的数量）和（第m到第n-1个字符中’L’的数量）的最小值即可。</p>
-                                    <h3>M – Safest Buildings</h3>
+                                    <p>M – Safest Buildings:</p>
                                     <p>计算每幢楼到原点的距离，然后分情况。</p>
                                     <p>1.R&gt;=2r：找出离原点最近的楼。</p>
                                     <p>2.R&lt;2r：先找以2r-R为半径的圆内有没有楼，有的话输出即可，否则找出离原点最近的楼。</p>
