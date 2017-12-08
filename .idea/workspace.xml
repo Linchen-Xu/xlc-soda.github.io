@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c9c0ee4-74fc-4f9e-b1c2-09bcff675e53" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/05.ppt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/101.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/101a.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/102.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/102a.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/121.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/121a.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/61.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/61a.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/62.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/62a.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/81.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/81a.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/82.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/GL/82a.doc" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/index.html" afterPath="$PROJECT_DIR$/articles/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/index.html" afterPath="$PROJECT_DIR$/sources/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,23 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/articles/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1334">
-              <caret line="298" column="39" lean-forward="false" selection-start-line="298" selection-start-column="39" selection-end-line="298" selection-end-column="39" />
+            <state relative-caret-position="207">
+              <caret line="255" column="63" lean-forward="true" selection-start-line="255" selection-start-column="63" selection-end-line="255" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#10409#10413#0" expanded="true" />
-                <element signature="e#10474#10478#0" expanded="true" />
-                <element signature="e#10563#10569#1" expanded="true" />
+                <element signature="e#10358#10362#0" expanded="true" />
+                <element signature="e#10423#10427#0" expanded="true" />
+                <element signature="e#10512#10518#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="758">
@@ -138,8 +121,8 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/articles/index.html" />
         <option value="$PROJECT_DIR$/sources/index.html" />
+        <option value="$PROJECT_DIR$/articles/index.html" />
       </list>
     </option>
   </component>
@@ -264,12 +247,12 @@
       <workItem from="1512382747583" duration="731000" />
       <workItem from="1512447491590" duration="6829000" />
       <workItem from="1512611579705" duration="343000" />
-      <workItem from="1512728053354" duration="8053000" />
+      <workItem from="1512728053354" duration="8211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44022000" />
+    <option name="totallyTimeSpent" value="44180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -576,20 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articles/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="298" column="39" lean-forward="false" selection-start-line="298" selection-start-column="39" selection-end-line="298" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10409#10413#0" expanded="true" />
-            <element signature="e#10474#10478#0" expanded="true" />
-            <element signature="e#10563#10569#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="758">
@@ -597,6 +566,20 @@
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="255" column="63" lean-forward="true" selection-start-line="255" selection-start-column="63" selection-end-line="255" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#10358#10362#0" expanded="true" />
+            <element signature="e#10423#10427#0" expanded="true" />
+            <element signature="e#10512#10518#1" expanded="true" />
           </folding>
         </state>
       </provider>
