@@ -6,7 +6,6 @@ body {
     background-color: rgb(33, 33, 33);
     margin: 0;
     font: 12px/1.5 Arial, 'Droid Sans', 'Hiragino Sans GB', 'Microsoft YaHei';
-    /*text-shadow: rgb(17, 17, 17) 1px 1px 0px;*/
     cursor:url(/image/cursor_normal.png),auto;
     line-height: 20px;
     color: #ddd;
