@@ -256,3 +256,10 @@ widget .latest-posts .entry-title a{
     padding: 6px 8px;
 }
 
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+
