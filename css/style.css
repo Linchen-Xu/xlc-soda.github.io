@@ -1022,6 +1022,193 @@ object {
 
 
 
+/* === Preloader === */
+
+#st-preloader {
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#pre-status,
+.preload-placeholder {
+    background-image: url(assets/images/preloader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+}
+
+.preload-placeholder {
+    background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
+}
+
+
+
+/* === top-social === */
+.top-social{
+    float: left;
+    line-height: 54px;
+}
+
+.top-social a{
+    color: #333;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.top-social a:hover{
+    color: #00ACDF;
+}
+
+.top-social-search{
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+
+/* === Search === */
+.top-search{
+    float: right;
+    line-height: 54px;
+    margin-left: 35px;
+    background-color: rgba(182, 182, 182, 0.22);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.top-search a{
+    color: #333;
+    font-size: 14px;
+}
+
+.top-search a:hover{
+    color: #00ACDF;
+}
+
+.show-search {
+    position:absolute;
+    top: 54px;
+    right: 14px;
+    display: none;
+    z-index: 10000;
+}
+.show-search #searchform input#s {
+    width:200px;
+    padding: 10px 13px;
+    border-radius: 0;
+    background:#FFF;
+    -webkit-box-shadow: 0 5px 4px -4px rgba(190,190,190,.1);
+    -moz-box-shadow: 0 5px 4px -4px rgba(190,190,190,.1);
+    box-shadow: 0 5px 4px -4px rgba(190,190,190,.1);
+    border:1px solid #eee;
+}
+.show-search #searchform input#s:focus {
+    border:1px solid #ddd;
+    outline: none;
+}
+
+
+
+
+/* === Widgets === */
+
+.primary-sidebar .widget {
+    margin: 0 0 40px;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.widget-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.widget input[type=text], .widget input[type=email]{
+    padding: 6px 10px;
+}
+
+.widget .form input[type=submit]{
+    width: 100%;
+    font-size: 12px;
+}
+
+.widget ul{
+    padding-left: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.widget ul.children{
+    padding-left: 15px;
+    margin-top: 12px;
+}
+
+.widget li {
+    margin-bottom: 0;
+    padding: 8px 0;
+    position: relative;
+    list-style: disc;
+    color: #666;
+}
+
+.widget .menu{
+    float: none;
+}
+
+.widget .menu li {
+    display: inherit;
+    margin-right: 0;
+}
+
+.widget .menu li a{
+    line-height: 23px;
+}
+
+.widget li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0
+}
+
+.widget li:first-child{
+    padding-top: 0;
+}
+
+.widget li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.widget li a:hover{
+    color: #00ACDF;
+}
+
+.widget select {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+}
+
 /* Search */
 #searchform input#s{
     padding: 10px 13px;
@@ -1050,6 +1237,65 @@ object {
     background: #00ACDF;
     color: #fff;
     border-color: #00ACDF;
+}
+
+/* Calender */
+#wp-calendar {
+    width: 100%;
+    margin-bottom: 0px;
+}
+#wp-calendar caption {
+    text-align: right;
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding-top: 0;
+}
+#wp-calendar thead {
+    font-size: 12px;
+}
+#wp-calendar thead th {
+    padding-bottom: 10px;
+}
+#wp-calendar tbody {
+    color: #aaa;
+}
+#wp-calendar tbody td {
+    background: #f5f5f5;
+    border: 1px solid #fff;
+    text-align: center;
+    padding:8px;
+}
+#wp-calendar tbody td a {
+    font-weight:700;
+    color:#222;
+}
+#wp-calendar tbody td:hover {
+    background: #fff;
+}
+#wp-calendar tbody .pad {
+    background: none;
+}
+#wp-calendar tfoot #next {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: right;
+}
+#wp-calendar tfoot #prev {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+#wp-calendar tfoot a{
+    color: #00ACDF;
+}
+#wp-calendar thead th {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#calendar_wrap table tr td{
+    border-left: 0;
 }
 
 /* Social Icons */
