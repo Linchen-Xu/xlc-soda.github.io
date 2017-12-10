@@ -173,3 +173,86 @@ widget .latest-posts .entry-title a{
     outline: none;
 }
 
+.primary-sidebar .widget {
+    margin: 0 0 40px;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.widget-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.widget input[type=text], .widget input[type=email]{
+    padding: 6px 10px;
+}
+
+.widget .form input[type=submit]{
+    width: 100%;
+    font-size: 12px;
+}
+
+.widget ul{
+    padding-left: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.widget ul.children{
+    padding-left: 15px;
+    margin-top: 12px;
+}
+
+.widget li {
+    margin-bottom: 0;
+    padding: 8px 0;
+    position: relative;
+    list-style: disc;
+    color: #666;
+}
+
+.widget .menu{
+    float: none;
+}
+
+.widget .menu li {
+    display: inherit;
+    margin-right: 0;
+}
+
+.widget .menu li a{
+    line-height: 23px;
+}
+
+.widget li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0
+}
+
+.widget li:first-child{
+    padding-top: 0;
+}
+
+.widget li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.widget li a:hover{
+    color: #00ACDF;
+}
+
+.widget select {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+}
+
