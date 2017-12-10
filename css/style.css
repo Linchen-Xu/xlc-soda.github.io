@@ -978,40 +978,6 @@ article header.entry-header h1.entry-title a:hover{
 }
 
 
-/* --- Quote --- */
-.entry-qoute blockquote{
-    padding: 50px;
-    color: #fff;
-    position: relative;
-    font-size: 16px;
-    border-left: 0;
-    letter-spacing: .20px;
-}
-
-
-
-/* === Infinite scroll === */
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-    display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-    display: block;
-}
-
-
-/* === Media === */
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-    border: none;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 0;
-}
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
@@ -1021,39 +987,6 @@ object {
 }
 
 
-
-/* === Preloader === */
-
-#st-preloader {
-    background: #FFF;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 9999;
-}
-
-#pre-status,
-.preload-placeholder {
-    background-image: url(assets/images/preloader.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50px;
-    left: 50%;
-    margin: -25px 0 0 -25px;
-    position: absolute;
-    top: 50%;
-    width: 50px;
-}
-
-.preload-placeholder {
-    background: none;
-    left: 0;
-    margin: 0;
-    text-align: center;
-    top: 65%;
-}
 
 
 /* === Search === */
