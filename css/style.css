@@ -111,6 +111,58 @@ article header.entry-header h1.entry-title{
     padding: 0;
 }
 
+widget .latest-posts .entry-title a{
+    color: #2d2d2d;
+}
+
+.widget .latest-posts .entry-title a:hover{
+    color: #00ACDF;
+}
+
+.widget .latest-posts .entry-title {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.media, .media .media {
+    margin-top: 0;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.latest-posts .media:first-child {
+    padding-top: 0;
+}
+
+.latest-posts .media:last-child {
+    padding-bottom: 0;
+    border-bottom: 0px solid;
+}
+
+.latest-posts .entry-meta{
+    color: #9e9e9e;
+}
+
+.latest-posts .small {
+    font-size: 12px;
+}
+
+.latest-posts .media>.pull-left {
+    padding-right: 10px;
+}
+
+.latest-posts .pull-left {
+    float: left!important;
+}
+
+.latest-posts .media-body {
+    display: table-cell;
+    vertical-align: top;
+}
+
 #searchform input#s{
     padding: 10px 13px;
     border-radius: 0;
