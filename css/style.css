@@ -977,6 +977,42 @@ article header.entry-header h1.entry-title a:hover{
     color: #00ACDF;
 }
 
+
+/* --- Quote --- */
+.entry-qoute blockquote{
+    padding: 50px;
+    color: #fff;
+    position: relative;
+    font-size: 16px;
+    border-left: 0;
+    letter-spacing: .20px;
+}
+
+
+
+/* === Infinite scroll === */
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+
+/* === Media === */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
