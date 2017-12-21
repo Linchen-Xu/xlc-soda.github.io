@@ -57,10 +57,10 @@
                 top_div.style.display = "none";
             }
         };
-        function smoothscroll(){
+        function totop(){
             var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
             if (currentScroll > 0) {
-                window.requestAnimationFrame(smoothscroll);
+                window.requestAnimationFrame(totop);
                 window.scrollTo (0,currentScroll - (currentScroll/5));
             }
         }
@@ -76,7 +76,7 @@
 <a>
     <div id="top_div">
         <a>
-            <img src="/image/top.png" title="回到顶部" onclick="smoothscroll()">
+            <img src="/image/top.png" title="回到顶部" onclick="totop()">
         </a>
     </div>
 </a>
