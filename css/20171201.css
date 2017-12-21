@@ -76,6 +76,7 @@ a:focus {
 
 li {
     list-style: none;
+    cursor:url(/image/cursor_jump.png),auto;
 }
 
 .topbar {
