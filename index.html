@@ -57,6 +57,13 @@
                 top_div.style.display = "none";
             }
         };
+        function smoothscroll(){
+            var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            if (currentScroll > 0) {
+                window.requestAnimationFrame(smoothscroll);
+                window.scrollTo (0,currentScroll - (currentScroll/5));
+            }
+        }
     </script>
     <link rel="stylesheet" type="text/css" href="/css/20171201.css" />
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
@@ -68,8 +75,8 @@
 <!-- return to top button -->
 <a>
     <div id="top_div">
-        <a href="#">
-            <img src="/image/top.png" title="回到顶部">
+        <a>
+            <img src="/image/top.png" title="回到顶部" onclick="smoothscroll()">
         </a>
     </div>
 </a>
