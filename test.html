@@ -127,7 +127,7 @@
         // random backgroung image
         window.onload = function(){
             $('body').removeClass('is-loading');
-            $('.curtain').removeChild(0);
+            $('.curtain').fadeOut();
             var oTop = document.getElementById("to_top");
             var screenw = document.documentElement.clientWidth || document.body.clientWidth;
             var screenh = document.documentElement.clientHeight || document.body.clientHeight;
