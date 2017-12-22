@@ -127,7 +127,6 @@
         // random backgroung image
         window.onload = function(){
             $('body').removeClass('is-loading');
-            $('.curtain').fadeOut();
             var oTop = document.getElementById("to_top");
             var screenw = document.documentElement.clientWidth || document.body.clientWidth;
             var screenh = document.documentElement.clientHeight || document.body.clientHeight;
@@ -179,6 +178,12 @@
 <!-- end of return to top button -->
 
 <body style="background-attachment: fixed;" id="particles-js" class="is-loading">
+
+<div class="curtain">
+    <div class="loader">
+        loading...
+    </div>
+</div>
 
 <!--particles-->
 
