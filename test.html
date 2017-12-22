@@ -28,11 +28,6 @@
             position: absolute;
             top:0;
         }
-        .loading{
-            position:fixed;
-            width:100%;
-            height:100%;
-        }
     </style>
     <script type="text/javascript">
         // random backgroung image
@@ -49,7 +44,7 @@
             oTop.onclick = function(){
                 document.documentElement.scrollTop = document.body.scrollTop =0;
             };
-            $(".loading").fadeOut();
+            $('body').removeClass('is-loading');
         };
         // return-to-top button
         window.onscroll = function(){
@@ -90,8 +85,10 @@
 
 <body style="background-attachment: fixed;" id="particles-js">
 
-<div class="loading">
-    <img src="image/loading.gif">
+<div class="curtain">
+    <div class="loader">
+        loading...
+    </div>
 </div>
 
 <!--particles-->
