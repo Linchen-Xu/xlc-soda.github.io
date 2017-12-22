@@ -33,42 +33,7 @@
         #div1 a {position:absolute; top:0; left:0; color:#000; font-weight:bold; text-decoration:none; padding: 3px 6px; }
         #div1 a:hover {border: 1px solid #eee; background: #FFF; }
     </style>
-    <script type="text/javascript">
-        // random backgroung image
-        window.onload = function(){
-            var oTop = document.getElementById("to_top");
-            var screenw = document.documentElement.clientWidth || document.body.clientWidth;
-            var screenh = document.documentElement.clientHeight || document.body.clientHeight;
-            oTop.style.left = screenw - oTop.offsetWidth +"px";
-            oTop.style.top = screenh - oTop.offsetHeight + "px";
-            window.onscroll = function(){
-                var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
-                oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
-            };
-            oTop.onclick = function(){
-                document.documentElement.scrollTop = document.body.scrollTop =0;
-            };
-        };
-        // return-to-top button
-        window.onscroll = function(){
-            var t = document.documentElement.scrollTop || document.body.scrollTop;
-            var top_div = document.getElementById( "top_div" );
-            if( t >= 500 ) {
-                top_div.style.display = "block";
-                if(t<=700)  top_div.style.opacity = (t-500) * 0.005;
-                else top_div.style.opacity = 1;
-            } else {
-                top_div.style.display = "none";
-            }
-        };
-        function totop(){
-            var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-            if (currentScroll > 0) {
-                window.requestAnimationFrame(totop);
-                window.scrollTo (0,currentScroll - (currentScroll/5));
-            }
-        }
-    </script>
+    <script type="text/javascript" src="/js/setting.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/20171201.css" />
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
