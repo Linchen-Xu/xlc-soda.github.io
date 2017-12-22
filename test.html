@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Bunker</title>
+
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        #top_div{
+            position:fixed;
+            bottom:80px;
+            right:0;
+            display:none;
+        }
+        div{
+            display: block;
+        }
+        #nav-bar {
+            width: 100%;
+            background-color: rgba(10,10,10,0.15);
+            height: 50px;
+            position: absolute;
+            top:0;
+        }
+        .loading{
+
+        }
+    </style>
+    <script type="text/javascript">
+        // random backgroung image
+        window.onload = function(){
+            var oTop = document.getElementById("to_top");
+            var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+            var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+            oTop.style.left = screenw - oTop.offsetWidth +"px";
+            oTop.style.top = screenh - oTop.offsetHeight + "px";
+            window.onscroll = function(){
+                var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+                oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+            };
+            oTop.onclick = function(){
+                document.documentElement.scrollTop = document.body.scrollTop =0;
+            };
+            $(".loading").fadeOut();
+        };
+        // return-to-top button
+        window.onscroll = function(){
+            var t = document.documentElement.scrollTop || document.body.scrollTop;
+            var top_div = document.getElementById( "top_div" );
+            if( t >= 500 ) {
+                top_div.style.display = "block";
+                if(t<=700)  top_div.style.opacity = (t-500) * 0.005;
+                else top_div.style.opacity = 1;
+            } else {
+                top_div.style.display = "none";
+            }
+        };
+        function totop(){
+            var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            if (currentScroll > 0) {
+                window.requestAnimationFrame(totop);
+                window.scrollTo (0,currentScroll - (currentScroll/5));
+            }
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="/css/20171201.css" />
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+</head>
+
+<!-- return to top button -->
+<a>
+    <div id="top_div">
+        <a>
+            <img src="/image/top.png" title="回到顶部" onclick="totop()">
+        </a>
+    </div>
+</a>
+<!-- end of return to top button -->
+
+<body style="background-attachment: fixed;" id="particles-js">
+
+<div class="loading">
+    <img src="image/loading.gif">
+</div>
+
+<!--particles-->
+
+<div style=""></div>
+<script src="/js/particles.min.js"></script>
+<script type="text/javascript">
+    particlesJS('particles-js',
+        {
+            "particles": {
+                "number": {
+                    "value": 110,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": true
+                    }
+                },
+                "size": {
+                    "value": 1,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 20,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 40,
+                    "color": "#fff",
+                    "opacity": 1,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 120,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 300
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true,
+            "config_demo": {
+                "hide_card": false,
+                "background_color": "#b61924",
+                "background_image": "",
+                "background_position": "100% 100%",
+                "background_size": "100%"
+            }
+        }
+
+    );
+</script>
+
+<!--end of particles-->
+
+
+
+<!-- randomly selected background image-->
+
+<script type="text/javascript">
+    var num = parseInt(Math.random()*5+1);
+    document.body.style.backgroundImage='url(/image/img'+num+'.jpg)';
+</script>
+
+<!--title changes-->
+<script type="text/javascript">
+    document.body.onfocus = function(){
+        document.title = 'The Bunker';
+    };
+    document.body.onblur = function(){
+        document.title = 'Get Back!';
+    };
+</script>
+<!--end of title changes-->
+
+<!-- navbar -->
+<div id="nav-bar">
+    <div class="nav-head">
+        <div id="top-nav" class="nav-container">
+            <a href="/">
+                <li class="h-active">首页</li>
+            </a>
+            <div class="nav-item-box">
+                <a href="/articles/">
+                    <li>文章</li>
+                </a>
+            </div>
+            <a href="/sources/"><li>资源</li></a>
+        </div>
+    </div>
+</div>
+<!-- end of navbar-->
+
+
+<!-- content -->
+<div style="margin-top: 80px;margin-bottom: 60px;position: absolute;top:0;left :20%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="primary" class="content-area">
+                    <main class="site-main" role="main">
+                        <article class="post type-post status-publish format-standard hentry">
+                            <div class="padding-content text-center">
+                                <header class="entry-header">
+                                    <h1 class="entry-title">
+                                        <a>Welcome!</a>
+                                    </h1>
+                                </header>
+                                <div class="entry-meta">
+                                    <ul class="list-inline">
+                                        <li>
+                                            <span class="author vcard">
+                                                By <a class="url fn n">X</a>
+                                            </span>
+                                        </li>
+                                        <li>/</li>
+                                        <li>
+                                            <span class="posted-on">2017-1-1</span>
+                                        </li>
+                                        <li>/</li>
+                                        <li>
+                                            <span class="posted-in">
+                                                <a>Introductory</a>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3>Welcome to The Bunker.</h3><br>
+                                <p>You can listen to the music if you like.</p><br>
+                                <p>They are soft music.</p><br><br>
+                                <p>Have fun!</p>
+                            </div>
+                        </article>
+                    </main>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="primary-sidebar widget-area" role="complementary">
+                    <aside class="widget widget_text">
+                        <div class="textwidget">
+                            <iframe frameborder="no" marginwidth="0" marginheight="0" width="330" height="350" src="//music.163.com/outchain/player?type=0&amp;id=988754696&amp;auto=0&amp;height=430;">
+                            </iframe>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end of tontent-->
+
+
+
+
+</body>
+</html>
