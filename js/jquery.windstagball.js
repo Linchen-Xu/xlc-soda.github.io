@@ -1,12 +1,3 @@
-/**
-* JQuery.windstagball.js
-* @description : 源码和创作思路来源于miaov,作者只是改良为Jquery插件，方便喜欢用jquery插件的人使用
-* @author : miaov winds
-* @url : http://www.miaov.com/ http://www.lijian.net/
-* @qq : 342377
-* @version :v1.0
-* @create :2012.05.04
-*/
 (function($) {
     $.fn.windstagball = function(options) {
 
