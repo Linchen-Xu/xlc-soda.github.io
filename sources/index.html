@@ -32,6 +32,8 @@
     <script type="text/javascript">
         // random backgroung image
         window.onload = function(){
+            $('.curtain').remove();
+            $('body').removeClass('is-loading');
             var oTop = document.getElementById("to_top");
             var screenw = document.documentElement.clientWidth || document.body.clientWidth;
             var screenh = document.documentElement.clientHeight || document.body.clientHeight;
@@ -84,220 +86,226 @@
 </a>
 <!-- end of return to top button -->
 
-<body style="background-attachment: fixed;" id="particles-js">
+<body style="background-attachment: fixed;" id="particles-js" class="is-loading">
+
+    <div class="curtain" style="z-index: 10000;">
+        <div class="loader">
+            loading...
+        </div>
+    </div>
 
 <!--particles-->
 
-<div style=""></div>
-<script src="/js/particles.min.js"></script>
-<script type="text/javascript">
-    particlesJS('particles-js',
-        {
-            "particles": {
-                "number": {
-                    "value": 110,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": true
-                    }
-                },
-                "size": {
-                    "value": 1,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 20,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 40,
-                    "color": "#fff",
-                    "opacity": 1,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 3,
-                    "direction": "none",
-                    "random": true,
-                    "straight": false,
-                    "out_mode": "out",
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "grab"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 120,
-                        "line_linked": {
-                            "opacity": 1
+    <div style=""></div>
+    <script src="/js/particles.min.js"></script>
+    <script type="text/javascript">
+        particlesJS('particles-js',
+            {
+                "particles": {
+                    "number": {
+                        "value": 110,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
                         }
                     },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
+                    "color": {
+                        "value": "#ffffff"
                     },
-                    "repulse": {
-                        "distance": 300
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
                     },
-                    "push": {
-                        "particles_nb": 4
+                    "opacity": {
+                        "value": 0.5,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": true
+                        }
                     },
-                    "remove": {
-                        "particles_nb": 2
+                    "size": {
+                        "value": 1,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 20,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 40,
+                        "color": "#fff",
+                        "opacity": 1,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 3,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
                     }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 120,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 300
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true,
+                "config_demo": {
+                    "hide_card": false,
+                    "background_color": "#b61924",
+                    "background_image": "",
+                    "background_position": "100% 100%",
+                    "background_size": "100%"
                 }
-            },
-            "retina_detect": true,
-            "config_demo": {
-                "hide_card": false,
-                "background_color": "#b61924",
-                "background_image": "",
-                "background_position": "100% 100%",
-                "background_size": "100%"
             }
-        }
 
-    );
-</script>
+        );
+    </script>
 
-<!--end of particles-->
+    <!--end of particles-->
 
-<!-- randomly selected background image-->
+    <!-- randomly selected background image-->
 
-<script type="text/javascript">
-    var num = parseInt(Math.random()*5+1);
-    document.body.style.backgroundImage='url(/image/img'+num+'.jpg)';
-</script>
+    <script type="text/javascript">
+        var num = parseInt(Math.random()*5+1);
+        document.body.style.backgroundImage='url(/image/img'+num+'.jpg)';
+    </script>
 
-<!--title changes-->
-<script type="text/javascript">
-    document.body.onfocus = function(){
-        document.title = '资源汇总';
-    };
-    document.body.onblur = function(){
-        document.title = 'Get Back!';
-    };
-</script>
-<!--end of title changes-->
+    <!--title changes-->
+    <script type="text/javascript">
+        document.body.onfocus = function(){
+            document.title = '资源汇总';
+        };
+        document.body.onblur = function(){
+            document.title = 'Get Back!';
+        };
+    </script>
+    <!--end of title changes-->
 
-<!-- navbar -->
-<div id="nav-bar">
-    <div class="nav-head">
-        <div id="top-nav" class="nav-container">
-            <a href="/">
-                <li class="h-active">首页</li>
-            </a>
-            <div class="nav-item-box">
-                <a href="/articles/">
-                    <li>文章</li>
+    <!-- navbar -->
+    <div id="nav-bar">
+        <div class="nav-head">
+            <div id="top-nav" class="nav-container">
+                <a href="/">
+                    <li class="h-active">首页</li>
                 </a>
+                <div class="nav-item-box">
+                    <a href="/articles/">
+                        <li>文章</li>
+                    </a>
+                </div>
+                <a href="/sources/"><li>资源</li></a>
             </div>
-            <a href="/sources/"><li>资源</li></a>
         </div>
     </div>
-</div>
-<!-- end of navbar-->
+    <!-- end of navbar-->
 
 
-<!-- content -->
-<div style="margin-top: 80px;margin-bottom: 60px;z-index: 1000;position: absolute;top:0;left :20%;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <article class="post-152 post type-post status-publish format-standard hentry">
-                    <div class="padding-content text-center">
-                        <div class="entry-content">
-                            <a class="url fn n" href="GL/05概率统计试题解析.ppt">05概率统计试题解析</a><br><br>
-                            <a class="url fn n" href="GL/2006—2007学年 第1学期概率统计试卷A.doc">2006—2007学年 第1学期概率统计试卷A</a><br><br>
-                            <a class="url fn n" href="GL/2006—2007学年 第1学期概率统计试卷A答案.doc">2006—2007学年 第1学期概率统计试卷A答案</a><br><br>
-                            <a class="url fn n" href="GL/2006—2007学年 第2学期概率统计试卷A.doc">2006—2007学年 第2学期概率统计试卷A</a><br><br>
-                            <a class="url fn n" href="GL/2006—2007学年 第2学期概率统计试卷A答案.doc">2006—2007学年 第2学期概率统计试卷A答案</a><br><br>
-                            <a class="url fn n" href="GL/2008—2009学年 第1学期概率统计试卷A.doc">2008—2009学年 第1学期概率统计试卷A</a><br><br>
-                            <a class="url fn n" href="GL/2008—2009学年 第1学期概率统计试卷A答案.doc">2008—2009学年 第1学期概率统计试卷A答案</a><br><br>
-                            <a class="url fn n" href="GL/2008—2009学年 第2学期概率统计试卷A.doc">2008—2009学年 第2学期概率统计试卷A</a><br><br>
-                            <a class="url fn n" href="GL/2008—2009学年 第2学期概率统计试卷A答案.doc">2008—2009学年 第2学期概率统计试卷A答案</a><br><br>
-                            <a class="url fn n" href="GL/2010—2011学年 第1学期概率论试卷A.doc">2010—2011学年 第1学期概率论试卷A</a><br><br>
-                            <a class="url fn n" href="GL/2010—2011学年 第1学期概率论试卷A答案.doc">2010—2011学年 第1学期概率论试卷A答案</a><br><br>
-                            <a class="url fn n" href="GL/2010—2011学年 第2学期概率论试卷A.doc">2010—2011学年 第2学期概率论试卷A</a><br><br>
-                            <a class="url fn n" href="GL/2010—2011学年 第2学期概率论试卷A及答案.doc">2010—2011学年 第2学期概率论试卷A及答案</a><br><br>
-                            <a class="url fn n" href="GL/2012—2013学年 第1学期概率论试卷A.doc">2012—2013学年 第1学期概率论试卷A</a><br><br>
-                            <a class="url fn n" href="GL/2012—2013学年 第1学期概率论试卷A答案.doc">2012—2013学年 第1学期概率论试卷A答案</a>
+    <!-- content -->
+    <div style="margin-top: 80px;margin-bottom: 60px;z-index: 1000;position: absolute;top:0;left :20%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="post-152 post type-post status-publish format-standard hentry">
+                        <div class="padding-content text-center">
+                            <div class="entry-content">
+                                <a class="url fn n" href="GL/05概率统计试题解析.ppt">05概率统计试题解析</a><br><br>
+                                <a class="url fn n" href="GL/2006—2007学年 第1学期概率统计试卷A.doc">2006—2007学年 第1学期概率统计试卷A</a><br><br>
+                                <a class="url fn n" href="GL/2006—2007学年 第1学期概率统计试卷A答案.doc">2006—2007学年 第1学期概率统计试卷A答案</a><br><br>
+                                <a class="url fn n" href="GL/2006—2007学年 第2学期概率统计试卷A.doc">2006—2007学年 第2学期概率统计试卷A</a><br><br>
+                                <a class="url fn n" href="GL/2006—2007学年 第2学期概率统计试卷A答案.doc">2006—2007学年 第2学期概率统计试卷A答案</a><br><br>
+                                <a class="url fn n" href="GL/2008—2009学年 第1学期概率统计试卷A.doc">2008—2009学年 第1学期概率统计试卷A</a><br><br>
+                                <a class="url fn n" href="GL/2008—2009学年 第1学期概率统计试卷A答案.doc">2008—2009学年 第1学期概率统计试卷A答案</a><br><br>
+                                <a class="url fn n" href="GL/2008—2009学年 第2学期概率统计试卷A.doc">2008—2009学年 第2学期概率统计试卷A</a><br><br>
+                                <a class="url fn n" href="GL/2008—2009学年 第2学期概率统计试卷A答案.doc">2008—2009学年 第2学期概率统计试卷A答案</a><br><br>
+                                <a class="url fn n" href="GL/2010—2011学年 第1学期概率论试卷A.doc">2010—2011学年 第1学期概率论试卷A</a><br><br>
+                                <a class="url fn n" href="GL/2010—2011学年 第1学期概率论试卷A答案.doc">2010—2011学年 第1学期概率论试卷A答案</a><br><br>
+                                <a class="url fn n" href="GL/2010—2011学年 第2学期概率论试卷A.doc">2010—2011学年 第2学期概率论试卷A</a><br><br>
+                                <a class="url fn n" href="GL/2010—2011学年 第2学期概率论试卷A及答案.doc">2010—2011学年 第2学期概率论试卷A及答案</a><br><br>
+                                <a class="url fn n" href="GL/2012—2013学年 第1学期概率论试卷A.doc">2012—2013学年 第1学期概率论试卷A</a><br><br>
+                                <a class="url fn n" href="GL/2012—2013学年 第1学期概率论试卷A答案.doc">2012—2013学年 第1学期概率论试卷A答案</a>
+                            </div>
                         </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="primary-sidebar widget-area" role="complementary">
+                        <aside class="widget widget_text">
+                            <div class="textwidget">
+                                <iframe frameborder="no" marginwidth="0" marginheight="0" width="330" height="350" src="//music.163.com/outchain/player?type=0&amp;id=988754696&amp;auto=0&amp;height=430;">
+                                </iframe>
+                            </div>
+                        </aside>
+                        <aside class="widget widget_text">
+                            <div class="btn btn-block close-effect" onclick="changeOpacity()">
+                                点我点我=-=
+                            </div>
+                        </aside>
                     </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <div class="primary-sidebar widget-area" role="complementary">
-                    <aside class="widget widget_text">
-                        <div class="textwidget">
-                            <iframe frameborder="no" marginwidth="0" marginheight="0" width="330" height="350" src="//music.163.com/outchain/player?type=0&amp;id=988754696&amp;auto=0&amp;height=430;">
-                            </iframe>
-                        </div>
-                    </aside>
-                    <aside class="widget widget_text">
-                        <div class="btn btn-block close-effect" onclick="changeOpacity()">
-                            点我点我=-=
-                        </div>
-                    </aside>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- end of tontent-->
+    <!-- end of tontent-->
 
 
 

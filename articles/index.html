@@ -36,6 +36,8 @@
     <script type="text/javascript">
         // random backgroung image
         window.onload = function(){
+            $('.curtain').remove();
+            $('body').removeClass('is-loading');
             var oTop = document.getElementById("to_top");
             var screenw = document.documentElement.clientWidth || document.body.clientWidth;
             var screenh = document.documentElement.clientHeight || document.body.clientHeight;
@@ -89,7 +91,14 @@
 </a>
 <!-- end of return to top button -->
 
-<body style="background-attachment: fixed;" id="particles-js">
+<body style="background-attachment: fixed;" id="particles-js" class="is-loading">
+
+<div class="curtain" style="z-index: 10000;">
+    <div class="loader">
+        loading...
+    </div>
+</div>
+
 
 <!--particles-->
 
