@@ -74,7 +74,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    <script class="jquery library" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script class="jquery library" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="tagCloud.js"></script>
 </head>
 
@@ -90,6 +90,18 @@
 
 <body style="background-attachment: fixed;" id="particles-js">
 
+<div class="div1" id="tagCloud">
+    <a href="javascript:void()">1</a>
+    <a href="javascript:void()" class="red">2</a>
+    <a href="javascript:void()">3</a>
+</div>
+
+
+<script type="text/javascript">
+    $(function(){
+        $('#tagCloud').tagCloud();
+    });
+</script>
 <!--particles-->
 
 <div style=""></div>
