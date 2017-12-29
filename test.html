@@ -74,7 +74,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="/js/jquery.windstagball.js"></script>
 </head>
 
@@ -503,6 +503,23 @@
                                 speed:15
                             });
                         });
+                    </script>
+                    <aside class="widget widget_text">
+                        <div class="btn btn-block close-effect">
+                            点我点我
+                        </div>
+                    </aside>
+                    <script type="text/javascript">
+                        $('.close-effect').onclick = function(){
+                            var a = $('body');
+                            if(a.hasClass('transparent')){
+                                a.removeClass('transparent');
+                                a.css('opacity','1');
+                            }else{
+                                a.addClass('transparent');
+                                a.css('opacity','0.5');
+                            }
+                        }
                     </script>
                 </div>
 
