@@ -504,6 +504,11 @@
                             });
                         });
                     </script>
+                    <aside class="widget widget_text">
+                        <div class="close-effect">
+                            点我点我
+                        </div>
+                    </aside>
                 </div>
 
             </div>
@@ -517,4 +522,17 @@
 
 
 </body>
+
+<script type="text/javascript">
+    $('.close-effect').onclick = function(){
+        var a = $('body');
+        if(a.hasClass('transparent')){
+            a.removeClass('transparent');
+            a.opacity = 1;
+        }else{
+            a.addClass('transparent');
+            a.opacity = 0.5;
+        }
+    }
+</script>
 </html>
