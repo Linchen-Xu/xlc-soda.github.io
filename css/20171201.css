@@ -265,6 +265,10 @@ li {
     float: right;
 }
 
-#top-nav .nav-right .login{
-    border-color:#913232;
+#top-nav .nav-right{
+    display: table;
+    float: right;
+    width:320px;
+    height:46px;
+    font-size:12px;
 }
