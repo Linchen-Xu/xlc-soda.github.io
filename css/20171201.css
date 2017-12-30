@@ -256,6 +256,15 @@ li {
     width: 100%;
 }
 
+#top-nav .nav-right{
+    display: table;
+    float: right;
+    width:320px;
+    height:46px;
+    font-size:12px;
+    box-sizing: border-box;
+ }
+
 #top-nav .nav-right .account{
     display: table-cell;
     vertical-align: middle;
@@ -265,10 +274,3 @@ li {
     float: right;
 }
 
-#top-nav .nav-right{
-    display: table;
-    float: right;
-    width:320px;
-    height:46px;
-    font-size:12px;
-}
