@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c9c0ee4-74fc-4f9e-b1c2-09bcff675e53" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/20171201.css" afterPath="$PROJECT_DIR$/css/20171201.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,8 +28,8 @@
       <file leaf-file-name="20171201.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/20171201.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1587">
-              <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+            <state relative-caret-position="684">
+              <caret line="263" column="11" lean-forward="true" selection-start-line="263" selection-start-column="11" selection-end-line="263" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -46,8 +48,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="263" column="18" lean-forward="false" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+            <state relative-caret-position="644">
+              <caret line="264" column="52" lean-forward="false" selection-start-line="264" selection-start-column="52" selection-end-line="264" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -171,13 +173,13 @@
         <option value="$PROJECT_DIR$/js/setting.js" />
         <option value="$PROJECT_DIR$/answer.html" />
         <option value="$PROJECT_DIR$/js/spig.js" />
-        <option value="$PROJECT_DIR$/css/20171201.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sources/index.html" />
         <option value="$PROJECT_DIR$/js/jquery.windstagball.js" />
         <option value="$PROJECT_DIR$/js/funcs.js" />
         <option value="$PROJECT_DIR$/articles/index.html" />
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/css/20171201.css" />
       </list>
     </option>
   </component>
@@ -375,12 +377,12 @@
       <workItem from="1514515239402" duration="252000" />
       <workItem from="1514527048498" duration="7072000" />
       <workItem from="1514558014975" duration="2246000" />
-      <workItem from="1514651501621" duration="608000" />
+      <workItem from="1514651501621" duration="1024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87467000" />
+    <option name="totallyTimeSpent" value="87883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -601,22 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4324">
-          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/20171201.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1587">
-          <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1449">
@@ -676,10 +662,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4324">
+          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/20171201.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="263" column="11" lean-forward="true" selection-start-line="263" selection-start-column="11" selection-end-line="263" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="263" column="18" lean-forward="false" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+        <state relative-caret-position="644">
+          <caret line="264" column="52" lean-forward="false" selection-start-line="264" selection-start-column="52" selection-end-line="264" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />

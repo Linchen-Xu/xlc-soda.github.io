@@ -256,3 +256,15 @@ li {
     width: 100%;
 }
 
+#top-nav .navbar-right .account{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.not-login{
+    float: right;
+}
+
+#top-nav .nav-right .login{
+    border-color:#913232;
+}
