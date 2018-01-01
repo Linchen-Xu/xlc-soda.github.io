@@ -50,6 +50,14 @@ textarea {
     -webkit-font-smoothing: antialiased;
 }
 
+input,textarea{
+    padding:3px;
+    color: #666;
+    border:1px solid #ccc;
+    border-radius:0;
+    line-height:normal;
+}
+
 embed,
 iframe,
 object {
