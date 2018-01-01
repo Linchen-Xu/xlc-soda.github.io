@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>何问起--推荐访问</title>
+    <script type="text/javascript" src="http://hovertree.com/ziyuan/jquery/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/error/styles.css" />
+    <script src="/error/script.js" type="text/javascript"></script>
+</head>
+<body>
+<h1>推荐</h1>
+<h2>将为您智能跳转到您可能要访问的页面</h2>
+<p><!-- Internet Explorer HTML5 enabling script: --><!--[if IE]>
+    <script src="html5.js"></script>
+<![endif]-->
+</p>
+
+建议您访问<a href="http://hovertree.com/" id="newhref_keleyi_com">http://hovertree.com</a><br />
+再过<span id="sec_keleyi_com" style="font-size:36px;color:Red">1</span>秒,将自动为您智能跳转<br />
+<br />
+您也可以访问<a href="http://hovertree.com">首页</a>查找内容
+<div id="rocket">&nbsp;</div>
+
+<div style="display:none;">
+<script type="text/javascript" src="/themes/tj/btj.js"></script>
+</div>
+</body>
+</html>
