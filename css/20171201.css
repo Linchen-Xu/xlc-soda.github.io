@@ -292,3 +292,6 @@ li {
     transition: all 300ms ease;
 }
 
+img:hover{
+    cursor:url(/image/cursor_jump.png),auto;
+}
