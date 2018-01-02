@@ -357,7 +357,7 @@
                 <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display: none;">
             </div>
 
-            <div id="editor content" contenteditable="true">
+            <div id="editor" class="contents" contenteditable="true">
             </div>
         </div>
         <div class="btn btn-default center-block" id="SendEmail">发送邮件</div>
@@ -365,7 +365,7 @@
             $(document).on("click", "#SendEmail", function () {
                 var website = '592789211@qq.com';
                 var subject = document.getElementById("theme").value;
-                var body = document.getElementById("content").value;
+                var body = document.getElementsByClassName("contents").value;
                 var url = "mailto:" + website + "?subject=" + subject + "&body=" + body;
                 document.getElementById("SendEmai").setAttribute("href", url);
             });
