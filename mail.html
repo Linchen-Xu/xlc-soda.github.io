@@ -78,6 +78,15 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
     <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="/js/funcs.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <script type="text/javascript" src="/js/bootstrap-wysiwyg.js"></script>
+    <link href="/css/external/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <script src="/css/external/jquery.hotkeys.js"></script>
+    <script src="/css/external/google-code-prettify/prettify.js"></script>
 </head>
 
 <!-- return to top button -->
@@ -281,92 +290,86 @@
 <!-- content -->
 <div style="z-index: 1000;margin-top: 80px;margin-bottom: 60px;position: absolute;top:0;left :20%;">
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div id="primary" class="content-area">
-                    <main class="site-main" role="main">
-                        <article class="post type-post status-publish format-standard hentry">
-                            <div class="padding-content text-center">
-                                <div class="commonemail_Wrap">
-                                    <div>
-                                        <div>
-                                            <label>主题</label>
-                                            <input type="text" id="theme" name="subject"/>
-                                        </div>
-                                        <div>
-                                            <label class="unique">内容</label>
-                                            <textarea rows="10" id="content" name="message" style="width: 500px;"></textarea>
-                                        </div>
-                                        <a href="#" id="SendEmail" class="btn btn-default">发送邮件</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </main>
-                </div>
-            </div>
-            <script type="text/javascript">
-                $(document).on("click", "#SendEmail", function () {
-                    var website = '592789211@qq.com';
-                    var subject = document.getElementById("theme").value;
-                    var body = document.getElementById("content").value;
-                    var url = "mailto:" + website + "?subject=" + subject + "&body=" + body;
-                    document.getElementById("SendEmai").setAttribute("href", url);
-                });
-            </script>
+        <div class="hero-unit">
+            <h1>向我发邮件<br>
+                <small>标题：</small><input type="text" id="theme" style="height: 100%;margin-bottom: 0;">
+            </h1>
+            <hr/>
+            <!---
+            Please read this before copying the toolbar:
 
-            <div class="col-md-4">
-                <div class="primary-sidebar widget-area" role="complementary">
-                    <aside class="widget widget_text">
-                        <div class="textwidget">
-                            <iframe frameborder="no" marginwidth="0" marginheight="0" width="330" height="350" src="//music.163.com/outchain/player?type=0&amp;id=988754696&amp;auto=0&amp;height=430"></iframe>
-                        </div>
-                    </aside>
-                    <aside class="widget widget_search">
-                        <form role="search" method="get" id="searchform">
-                            <div>
-                                <input type="text" placeholder="想知道什么就问我吧→_→" name="s" id="s" class="form-control">
-                            </div>
-                        </form>
-                    </aside>
-                    <aside class="widget widget_text">常用标签
-                        <div id="div1">
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                            <a href="#">示例标签</a>
-                        </div>
-                    </aside>
-                    <script type="text/javascript">
-                        $(document).ready(function() {
-                            $("#div1").windstagball({
-                                radius:100,
-                                speed:15
-                            });
-                        });
-                    </script>
-                    <aside class="widget widget_text">
-                        <div class="btn btn-block close-effect" onclick="changeOpacity()">
-                            点我点我=-=
-                        </div>
-                    </aside>
-                    <aside class="widget widget_text">
-                        联系博主:<br>
-                        <img src="/image/github-square.png" onclick="window.open('https://github.com/xlc-soda')" title="github">
-                        <img src="/image/sina.png" title="博主暂时还没有微博账号=-=">
-                        <a href="mailto:592789211@qq.com?CC=592789211@qq.com&BCC=592789211@qq.com&Subject=Hello&Body=你好">
-                            <img src="/image/mail.png" title="发送邮件">
-                        </a>
-                    </aside>
+            * One of the best things about this widget is that it does not impose any styling on you, and that it allows you
+            * to create a custom toolbar with the options and functions that are good for your particular use. This toolbar
+            * is just an example - don't just copy it and force yourself to use the demo styling. Create your own. Read
+            * this page to understand how to customise it:
+            * https://github.com/mindmup/bootstrap-wysiwyg/blob/master/README.md#customising-
+            --->
+            <div id="alerts"></div>
+            <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+                <div class="btn-group">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Font"><i class="icon-font"></i><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a data-edit="fontName Serif" style="font-family:'Serif'">Serif</a></li><li><a data-edit="fontName Sans" style="font-family:'Sans'">Sans</a></li><li><a data-edit="fontName Arial" style="font-family:'Arial'">Arial</a></li><li><a data-edit="fontName Arial Black" style="font-family:'Arial Black'">Arial Black</a></li><li><a data-edit="fontName Courier" style="font-family:'Courier'">Courier</a></li><li><a data-edit="fontName Courier New" style="font-family:'Courier New'">Courier New</a></li><li><a data-edit="fontName Comic Sans MS" style="font-family:'Comic Sans MS'">Comic Sans MS</a></li><li><a data-edit="fontName Helvetica" style="font-family:'Helvetica'">Helvetica</a></li><li><a data-edit="fontName Impact" style="font-family:'Impact'">Impact</a></li><li><a data-edit="fontName Lucida Grande" style="font-family:'Lucida Grande'">Lucida Grande</a></li><li><a data-edit="fontName Lucida Sans" style="font-family:'Lucida Sans'">Lucida Sans</a></li><li><a data-edit="fontName Tahoma" style="font-family:'Tahoma'">Tahoma</a></li><li><a data-edit="fontName Times" style="font-family:'Times'">Times</a></li><li><a data-edit="fontName Times New Roman" style="font-family:'Times New Roman'">Times New Roman</a></li><li><a data-edit="fontName Verdana" style="font-family:'Verdana'">Verdana</a></li></ul>
                 </div>
+                <div class="btn-group">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+                        <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+                        <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a class="btn" data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+                    <a class="btn" data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+                    <a class="btn" data-edit="strikethrough" title="" data-original-title="Strikethrough"><i class="icon-strikethrough"></i></a>
+                    <a class="btn" data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+                </div>
+                <div class="btn-group">
+                    <a class="btn" data-edit="insertunorderedlist" title="" data-original-title="Bullet list"><i class="icon-list-ul"></i></a>
+                    <a class="btn" data-edit="insertorderedlist" title="" data-original-title="Number list"><i class="icon-list-ol"></i></a>
+                    <a class="btn" data-edit="outdent" title="" data-original-title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
+                    <a class="btn" data-edit="indent" title="" data-original-title="Indent (Tab)"><i class="icon-indent-right"></i></a>
+                </div>
+                <div class="btn-group">
+                    <a class="btn btn-info" data-edit="justifyleft" title="" data-original-title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
+                    <a class="btn" data-edit="justifycenter" title="" data-original-title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
+                    <a class="btn" data-edit="justifyright" title="" data-original-title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
+                    <a class="btn" data-edit="justifyfull" title="" data-original-title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
+                </div>
+                <div class="btn-group">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Hyperlink"><i class="icon-link"></i></a>
+                    <div class="dropdown-menu input-append">
+                        <input class="span2" placeholder="URL" type="text" data-edit="createLink">
+                        <button class="btn" type="button">Add</button>
+                    </div>
+                    <a class="btn" data-edit="unlink" title="" data-original-title="Remove Hyperlink"><i class="icon-cut"></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)"><i class="icon-picture"></i></a>
+                    <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 36px; height: 30px;">
+                </div>
+                <div class="btn-group">
+                    <a class="btn" data-edit="undo" title="" data-original-title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
+                    <a class="btn" data-edit="redo" title="" data-original-title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+                </div>
+                <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display: none;">
+            </div>
+
+            <div id="editor content" contenteditable="true">
             </div>
         </div>
+        <div class="btn btn-default center-block" id="SendEmail">发送邮件</div>
+        <script type="text/javascript">
+            $(document).on("click", "#SendEmail", function () {
+                var website = '592789211@qq.com';
+                var subject = document.getElementById("theme").value;
+                var body = document.getElementById("content").value;
+                var url = "mailto:" + website + "?subject=" + subject + "&body=" + body;
+                document.getElementById("SendEmai").setAttribute("href", url);
+            });
+        </script>
     </div>
 </div>
 
