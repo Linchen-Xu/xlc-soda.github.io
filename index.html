@@ -279,9 +279,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div id="primary" class="content-area">
                         <main class="site-main" role="main">
-                            <article class="post type-post status-publish format-standard hentry">
+                            <article class="hentry">
                                 <div class="padding-content text-center">
                                     <header class="entry-header">
                                         <h1 class="entry-title">
@@ -314,23 +313,50 @@
                                 </div>
                             </article>
                         </main>
-                    </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="primary-sidebar widget-area" role="complementary">
-                        <aside class="widget widget_text">
+                        <aside class="widget">
                             <div class="textwidget">
-                                <iframe frameborder="no" marginwidth="0" marginheight="0" width="330" height="350" src="//music.163.com/outchain/player?type=0&amp;id=988754696&amp;auto=0&amp;height=430;">
-                                </iframe>
+                                <iframe frameborder="no" marginwidth="0" marginheight="0" width="330" height="350" src="//music.163.com/outchain/player?type=0&amp;id=988754696&amp;auto=0&amp;height=430"></iframe>
                             </div>
                         </aside>
-                        <aside class="widget widget_text">
+                        <aside class="widget">
+                            <form role="search" method="get" id="searchform">
+                                <div>
+                                    <input type="text" placeholder="想知道什么就问我吧→_→" name="s" id="s" class="form-control">
+                                </div>
+                            </form>
+                        </aside>
+                        <aside class="widget">常用标签
+                            <div id="div1">
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                                <a href="#">示例标签</a>
+                            </div>
+                        </aside>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                $("#div1").windstagball({
+                                    radius:100,
+                                    speed:15
+                                });
+                            });
+                        </script>
+                        <aside class="widget">
                             <div class="btn btn-block close-effect" onclick="changeOpacity()">
                                 点我点我=-=
                             </div>
                         </aside>
-                        <aside class="widget widget_text">
+                        <aside class="widget">
                             联系博主:<br>
                             <img src="/image/github-square.png" onclick="window.open('https://github.com/xlc-soda')" title="github">
                             <img src="/image/sina.png" title="博主暂时还没有微博账号=-=">
